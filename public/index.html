@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Game</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A online site for games with friends">
+        <meta name="author" content="Benjamin Fever">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function buttonClick(e){
+                if (e != '') { document.location.href = document.location.href + e + ".html"; }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div id="title"></div>
+        </header>
+        <section>
+            <input type="button" onclick="buttonClick('chat')" value="Chat Room"> 
+            <input type="button" onclick="buttonClick('2048')" value="2048 - 1 Player">
+            <input type="button" onclick="buttonClick('connect4')" value="Connect4 - 2 Player"> 
+            <input type="button" onclick="buttonClick('piano')" value="Piano"> 
+            <input type="button" onclick="buttonClick('soundboard')" value="Soundboard"> 
+            <input type="button" onclick="buttonClick('battleship')" value="Battleships - WIP"> 
+            <input type="button" onclick="buttonClick('snake')" value="Snake - WIP"> 
+        </section>
+        <footer>
+
+        </footer>
+        
+    </body>
+</html>

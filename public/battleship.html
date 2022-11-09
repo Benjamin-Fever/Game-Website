@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Game</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A online site for games with friends">
+        <meta name="author" content="Benjamin Fever">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src='/socket.io/socket.io.js'></script>
+        <script src="javascript/battleship.js"></script>
+        <link rel="stylesheet" href="css/battleship.css">
+    </head>
+    <body>
+        <div id="game">
+            <center>
+                <label id="display"></label>
+                <div id="switchDisplay">Switch</div>
+                <div id="gameGrid"></div>
+                
+                <label id="codeDisplay"></label>
+            </center>
+        </div>
+
+
+        <div id="menu">
+            <button onclick="buttonClick('host')">Host</button>
+            <button onclick="buttonClick('join')">Join</button>
+            <div id="code" class="hidden">
+                <label>Game code</label>
+                <input type="text" id="gameCode">
+                <input type="submit" onclick="buttonClick('gameCodeSub')" value="Submit">
+            </div>
+        </div>
+    </body>
+</html>

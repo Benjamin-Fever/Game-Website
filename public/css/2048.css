@@ -1,0 +1,15 @@
+.game tr, .game td {
+    width: 10em;
+    height: 10em;
+    text-align: center;
+    border: solid 0.2em black;
+    background-color: white;
+}
+
+.game table {
+    background-color: gray;
+}
+
+.slot {
+    font-size: 5em;
+}

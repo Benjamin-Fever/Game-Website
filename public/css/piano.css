@@ -1,0 +1,48 @@
+.blackKey {
+    background-color: black;
+    width: 70px;
+    height: 200px;
+    margin-left: 10px;
+}
+
+.blackKey:hover {
+    background-color: rgb(43, 42, 42);
+    animation: pianoAnim 250ms linear 0ms 1 normal forwards;
+}
+
+.whiteKey {
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 350px;
+}
+
+.whiteKey:hover {
+    background-color: rgb(236, 236, 236);
+    animation: pianoAnim 250ms linear 0ms 1 normal forwards;
+}
+
+.whiteKey,  .blackKey {
+    float: left;
+    border:1px solid #000000;
+}
+
+.blacks {
+    position: absolute;
+    margin-left: 40px;
+}
+
+.section {
+    float: left;
+}
+
+@keyframes pianoAnim {
+    0% {
+        transform: scale(1);
+        transform-origin: 100% 50%;
+    }
+
+    100% {
+        transform: scale(1.03);
+        transform-origin: 100% 50%;
+    }
+}

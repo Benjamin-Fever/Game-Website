@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>Online Game</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A online site for games with friends">
+    <meta name="author" content="Benjamin Fever">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/2048.css">
+    <script src='/socket.io/socket.io.js'></script>
+    <script src="javascript/2048.js"></script> 
+</head>
+<body>
+    <label id="score">Your Score: 0</label>
+    <table class="game" style="float: left;">
+        <tr>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+        </tr>
+        <tr>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+        </tr>
+        <tr>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+        </tr>
+        <tr>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+            <td><div class="slot"></div></td>
+        </tr>
+    </table>
+    
+    <table>
+        <tbody id="scoreboard">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <label>Add Score</label>
+
+
+    <form id="form" autocomplete="off">
+        <label>Username</label>
+        <input id="name" type="text" autocomplete="false" id="usernameInput">
+        <input type="submit" value="Confirm" onclick="updateScoreboard()">
+    </form>
+</body>

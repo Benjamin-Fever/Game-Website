@@ -1,0 +1,14 @@
+.buttons {
+    background-color: rgb(255, 255, 255);
+    float: left;
+    border:1px solid #000000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100px;
+    height: 20px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}

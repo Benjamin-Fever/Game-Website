@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Game</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A online site for games with friends">
+        <meta name="author" content="Benjamin Fever">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src='/socket.io/socket.io.js'></script>
+        <link rel="stylesheet" href="css/chat.css">
+    </head>
+    
+    <body>
+        <div id="chatBox">
+            <p id="textBox">An error has occured</p>
+            <form class="formClass" autocomplete="off">
+                <input type="text" autocomplete="false" id="textChat">
+                <input type="submit" value="Send" onclick="sendMessage()">
+            </form>
+        </div>
+        <br>
+        <form class="formClass" autocomplete="off">
+            <label>Username</label>
+            <input type="text" autocomplete="false" id="usernameInput">
+            <input type="submit" value="Confirm" onclick="updateUsername()">
+        </form>
+        <script src='javascript/chat.js'></script>
+    </body>
+</html>
